@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button id=".button_red" fx:id="justaButton" layoutX="115.0" layoutY="5.0" mnemonicParsing="false" onAction="#read" prefHeight="25.0" prefWidth="50.0" text="Read">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <TextArea fx:id="textArea" editable="false" layoutX="15.0" layoutY="67.0" prefHeight="320.0" prefWidth="150.0">
+         <font>
+            <Font size="10.0" />
+         </font></TextArea>
+      <Label fx:id="label" alignment="TOP_LEFT" layoutX="23.0" layoutY="13.0" prefHeight="20.0" prefWidth="100.0" text="Input file">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <TextField fx:id="textField" alignment="TOP_LEFT" layoutX="15.0" layoutY="35.0" prefHeight="25.0" prefWidth="150.0" promptText="path to file">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <Separator layoutX="175.0" layoutY="40.0" orientation="VERTICAL" prefHeight="320.0" prefWidth="7.0" />
+      <LineChart fx:id="chart" cacheHint="QUALITY" layoutX="180.0" legendSide="TOP" prefHeight="370.0" prefWidth="415.0" visible="false">
+           <xAxis>
+               <NumberAxis side="BOTTOM" />
+           </xAxis>
+           <yAxis>
+               <NumberAxis side="LEFT" />
+           </yAxis>
+      </LineChart>
+      <Button id=".button_red" fx:id="plotButton" layoutX="190.0" layoutY="5.0" mnemonicParsing="false" onAction="#plot" prefHeight="25.0" prefWidth="50.0" text="Plot" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button id=".button_red" fx:id="calcButton" layoutX="288.0" layoutY="363.0" mnemonicParsing="false" onAction="#calc" prefHeight="25.0" prefWidth="200.0" text="Let's try" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button id=".button_red" fx:id="saveButton" layoutX="288.0" layoutY="363.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="50.0" text="Save" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <TextField fx:id="saveField" layoutX="338.0" layoutY="363.0" prefHeight="25.0" prefWidth="150.0" promptText="save your results" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <Label fx:id="byV" layoutX="575.0" layoutY="200.0" onMouseClicked="#change" opacity="0.5" rotate="-90.0" text="by V.">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+   </children>
+</Pane>
